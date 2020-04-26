@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://tigerking33:tiger33king@ds215709.mlab.com:15709/heroku_57360fhc", { useNewUrlParser: true });
 
 //index route
 app.get("/", (req, res) => {
